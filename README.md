@@ -1,3 +1,16 @@
 README.md
 
-pip install pillow
+1.  python -m venv myvenv
+
+2.  myvenv/Scripts/activate
+
+3.  pip install django djangorestframework
+
+4.  django-admin startproject myboard .
+
+5.  python manage.py createsuperuser
+    (james / ~)
+
+6.  python manage.py startapp users
+
+7.  pip install pillow
