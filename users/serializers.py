@@ -1,10 +1,10 @@
-from profile import Profile
 from django.contrib.auth.models import User
 from django.contrib.auth.password_validation import validate_password
 from django.contrib.auth import authenticate
 from rest_framework import serializers
 from rest_framework.validators import UniqueValidator
 from rest_framework.authtoken.models import Token
+from .models import Profile
 
 
 class RegisterSerializer(serializers.ModelSerializer):
@@ -57,4 +57,5 @@ class LoginSerializer(serializers.Serializer):
 class ProfileSerializer(serializers.ModelSerializer):
     class Meta:
         model = Profile
-        field = ("nickname", "position", "subjects", "image")
+        fields = ("nickname", "position", "subjects")
+      

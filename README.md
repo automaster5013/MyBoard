@@ -14,3 +14,9 @@ README.md
 6.  python manage.py startapp users
 
 7.  pip install pillow
+
+8.  pip install django-cors-headers
+
+9.  npm create vite@7
+
+10. npm install axios
